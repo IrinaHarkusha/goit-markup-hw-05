@@ -16,31 +16,39 @@
       <a href="./index.html" class="icon-link"><span>WEB</span>STUDIO</a>
       <nav class="items">
         <ul class="site-nav list">
-          <li class="item"><a href="" class="link current">Studio</a></li>
-          <li class="item"><a href="./portfolio.html">Portfolio</a></li>
-          <li class="item"><a href="">Contacts</a></li>
+          <li class="item">
+            <a href="" class="link-current menu-link header-link current">Studio</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="menu-link header-link">Portfolio</a>
+          </li>
+          <li class="item">
+            <a href="" class="menu-link header-link">Contacts</a>
+          </li>
         </ul>
       </nav>
       <address class="items-nav">
         <ul class="auth-nav list">
-          <li class="item"><a href="email:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="item"><a href="tel:+11(000)1111111">+11 (000) 111-11-11</a></li>
+          <li class="item">
+            <a href="email:info@devstudio.com" class="menu-link">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+11(000)1111111" class="menu-link">+11 (000) 111-11-11</a>
+          </li>
         </ul>
       </address>
       </div> 
     </header>
 
-    
-    
 
     <main>
       <section class="hero words">
-        <div class="overlay">
+        <div class="section-hero">
         <div class="container">
         <h1 class="hero-title">
           Effective Solutions for Your Business
         </h1>
-        <button type="button" class="button">Order Service</button>
+        <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
         </div>
       </section>
@@ -421,6 +429,17 @@
       
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
